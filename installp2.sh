@@ -55,3 +55,9 @@ mkdir /boot/grub
 grub-mkconfig -o /boot/grub/grub.cfg
 grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
 
+cd /home/$UNAME/build
+su $UNAME -c "git clone https://github.com/Michae11s/dots.git"
+
+systemctl enable dhcpcd
+
+echo "Now back to you in the studio"
