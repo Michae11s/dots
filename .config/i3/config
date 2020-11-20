@@ -173,9 +173,9 @@ default_border pixel 3
 default_floating_border pixel 3
 
 #gaps
-gaps inner 8
-gaps outer 8
-gaps top 34
+gaps inner 12
+gaps outer 16
+gaps top 36
 
 # >>>>> Fonts <<<<<
 ###################
@@ -186,7 +186,7 @@ font pango:Terminus 11px
 
 # >>>>>> execs <<<<<
 ####################
-exec --no-startup-id feh --bg-scale ~/Wallpaper/scifi_mountains.jpg
+exec --no-startup-id ~/.fehbg
 exec --no-startup-id picom --config ~/.config/picom/config
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 

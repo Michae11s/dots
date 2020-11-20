@@ -64,7 +64,7 @@ font-3 = "Hack Nerd Font:size=12;2"
 
 modules-left = i3
 modules-center = date
-modules-right = pulseaudio memory cpu temperature wlan battery
+modules-right = pulseaudio memory cpu temperature wlan eth battery
 
 ;tray-position = right
 ;tray-padding = 2
@@ -248,7 +248,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface = net0
+interface = enp0s3
 interval = 3.0
 
 ;format-connected-underline = #55aa55
