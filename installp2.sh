@@ -57,6 +57,7 @@ grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
 
 cd /home/$UNAME/build
 su $UNAME -c "git clone https://github.com/Michae11s/dots.git"
+su $UNAME -c "git config --global credential.helper store"
 
 systemctl enable dhcpcd
 
