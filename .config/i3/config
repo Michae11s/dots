@@ -147,6 +147,8 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
+bindsym $win+r exec rofi -show run
+#bindsym $win+f rofi 
 bindsym $mod+r mode "resize"
 bindsym $mod+i exec chromium
 
@@ -163,18 +165,18 @@ set $urgent_border_color #854044
 set $indicator_color #7E8488
 
 # Window colors
-#						background			border						text					indicator
-client.focused			$inactive-bg-color	$focused_border_color		$text-color				$indicator_color
-client.unfocused		$inactive-bg-color	$unfocused_border_color		$inactive-text-color	$indicator_color
+#			background		border				text			indicator
+client.focused		$inactive-bg-color	$focused_border_color		$text-color		$indicator_color
+client.unfocused	$inactive-bg-color	$unfocused_border_color		$inactive-text-color	$indicator_color
 client.focused_inactive	$inactive-bg-color	$unfocused_switch_to_color	$inactive-text-color	$indicator_color
-client.urgent			$urgent-bg-color	$urgent_border_color		$text-color				$indicator_color
+client.urgent		$urgent-bg-color	$urgent_border_color		$text-color		$indicator_color
 
 default_border pixel 3
 default_floating_border pixel 3
 
 #gaps
-gaps inner 12
-gaps outer 16
+gaps inner 8
+gaps outer 14
 gaps top 36
 
 # >>>>> Fonts <<<<<
