@@ -1,7 +1,12 @@
 #!/bin/bash
 #creates a standard barebones setup, run in standard live media
 
+
 #run inside chroot
+git clone https://github.com/Michae11s/dots.git
+cp /dots/etc/* /etc/
+
+#locale gen
 ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 hwclock --systohc
 locale-gen
@@ -30,12 +35,14 @@ mkdir ./bin
 mkdir ./build
 mkdir ./Documents
 mkdir ./Downloads
-mv /home/newUser /home/$UNAME
-chown $UNAME -r /home/$UNAME
+cp -r /dots/.config ./
+mv .config/bash/.bash_profile ./
+mv .config/bash/.bashrc ./
+rm -r .config/bash
+chown $UNAME:$UNAME -R /home/$UNAME
 
 #install suplimental packages
-pacman -S $(cat /pkglist)
-rm /pkglist
+pacman -Syu $(cat /dots/pkglist)
 
 #build auracle
 cd /home/$UNAME/build
@@ -44,5 +51,7 @@ cd auracle-git
 su $UNAME -c "makepkg -si"
 
 #install bootloader
-grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+mkdir /boot/grub
 grub-mkconfig -o /boot/grub/grub.cfg
+grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+
