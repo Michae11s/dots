@@ -12,7 +12,7 @@
 file = '~/.config/polybar/config'
 template = 'polybar'
 rewrite = false
-hook = '/home/aest/.config/polybar/launch.sh'
+hook = '~/.config/polybar/launch.sh'
 
 [[item]]
 file = '~/.Xresources'

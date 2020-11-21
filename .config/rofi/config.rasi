@@ -4,4 +4,4 @@ configuration {
 	icon-theme:	"Papirus";
 }
 
-@import "/home/aest/.config/rofi/themes/center.rasi"
+@import "~/.config/rofi/themes/center.rasi"

@@ -15,7 +15,7 @@ locale-gen
 echo "ENTER THE DESIRED HOSTNAME:"
 read HNAME
 echo $HNAME > /etc/hostname
-echo $HNAME >> /etc/hosts
+echo "127.0.0.1	"$HNAME >> /etc/hosts
 
 #run initramfs again
 mkinitcpio -P
