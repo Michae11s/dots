@@ -2,16 +2,17 @@
 # runs as newuser to deploy all settings
 
 cd ~/
-mkdir ./.local/bin
+mkdir ~/.local
+mkdir ~/.local/bin
 ln -s ~/.local/bin/ ~/bin
-mkdir ./build
+mkdir ~/build
 xdg-user-dirs-update
 
 #build auracle
 cd ~/build
 git clone https://aur.archlinux.org/auracle-git.git
 cd auracle-git
-makepkg -si
+makepkg -si -noconfirm
 
 cd ~/build
 git config --global credential.helper store

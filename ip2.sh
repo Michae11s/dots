@@ -24,12 +24,12 @@ echo "Change the root passwd"
 passwd
 
 #install suplimental packages
-pacman -Syu $(cat /dots/pkglist)
+pacman -Syu --noconfirm $(cat /dots/pkglist)
 
 #install bootloader
 mkdir /boot/grub
 grub-mkconfig -o /boot/grub/grub.cfg
-grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB`
+grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
 systemctl enable dhcpcd
 
 ### POST INSTALL CUSTOMIZATIONS ###
@@ -42,4 +42,3 @@ passwd $UNAME
 su $UNAME -c "/dots/ip3.sh"
 rm -r /dots
 
-echo "Now back to you in the studio"
