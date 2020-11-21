@@ -18,6 +18,7 @@ export PS1="${GREEN} \w${RESET} \\$ "
 alias ls='ls --color=auto'
 alias ll='ls -lah'
 alias la='ls -a'
+alias vim=nvim
 
 eval "$(thefuck --alias)"
 echo ""
