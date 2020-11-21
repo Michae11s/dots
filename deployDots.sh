@@ -1,8 +1,8 @@
 #!/bin/bash
-list="neofetch i3 polybar picom alacritty"
+list="neofetch i3 polybar picom alacritty rofi"
 #deploys dot files to where they need to go
 for i in $list; do
-	rm ~/.config/$i
+	rm -r ~/.config/$i
 	ln -s $(pwd)/.config/$i ~/.config/$i
 done
 

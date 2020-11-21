@@ -1,0 +1,4 @@
+//rofi config file
+configuration {
+	modi:["locate:~/.config/rofi/locate.sh","find:~/.config/rofi/finder.sh",window,run,ssh];
+}
