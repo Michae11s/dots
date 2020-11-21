@@ -147,11 +147,11 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym $win+r exec rofi -show run
-bindsym $win+f exec rofi -show locate
-bindsym $mod+r mode "resize"
-bindsym $mod+i exec chromium
-
+bindsym $win+r 		exec rofi -show run
+bindsym $win+f 		exec rofi -show locate
+bindsym $mod+r 		mode "resize"
+bindsym $mod+i 		exec chromium
+bindsym $mod+Shift+i	exec chromium --incognito
 # >>>>>>>> look and feel <<<<<<<<<<
 ###################################
 bindsym $mod+g gaps inner current set 8; gaps outer current set 8

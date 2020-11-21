@@ -12,8 +12,16 @@ xdg-user-dirs-update
 cd ~/build
 git clone https://aur.archlinux.org/auracle-git.git
 cd auracle-git
-makepkg -si -noconfirm
+makepkg -si
 
+#build pacUpdt (script neofetch uses to get pacman updates pending)
+cd ~/build/
+git clone https://github.com/Michae11s/pacUpdt.git
+cd pacUpdt/
+makepkg -si
+sudo systemctl enable pacUpdt.timer
+
+# deploy dotfiles
 cd ~/build
 git config --global credential.helper store
 git clone https://github.com/Michae11s/dots.git
