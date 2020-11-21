@@ -5,12 +5,12 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export EDITOR=vim
+export EDITOR=nvim
 export PATH=$PATH:$(echo ~/bin)
 
 
 BLUE="\[$(tput setaf 12)\]"
-GREEN="\[$(tput setaf 12)\]"
+GREEN="\[$(tput setaf 6)\]"
 RESET="\[$(tput sgr0)\]"
 
 export PS1="${GREEN} \w${RESET} \\$ "

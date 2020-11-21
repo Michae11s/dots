@@ -1,0 +1,52 @@
+# Example item, with default values
+# [[item]]
+# file = '~/.config/example' (required)
+# template = 'example' (required)
+# subtemplate = 'default'
+# rewrite = false
+# start = '# Start flavours'
+# end = '# End flavours'
+# hook = ''
+
+[[item]]
+file = '~/.config/polybar/config'
+template = 'polybar'
+rewrite = false
+hook = '/home/aest/.config/polybar/launch.sh'
+
+[[item]]
+file = '~/.Xresources'
+template = 'xresources'
+subtemplate = 'default-256'
+rewrite = true
+
+[[item]]
+file = '~/.config/alacritty/alacritty.yml'
+template = 'alacritty'
+rewrite = false
+
+[[item]]
+file = '~/.config/i3/config'
+template = 'i3'
+subtemplate = 'colors'
+hook = 'i3-msg reload'
+rewrite = false
+
+[[item]]
+file = '~/.config/rofi/themes/styles/colors.rasi'
+template = 'rofi'
+subtemplate = 'Kustomcolors'
+rewrite = true
+
+[[item]]
+file = '~/.themes/FlatColor/colors3'
+template = 'gtk-flatcolor'
+subtemplate = 'gtk-3'
+rewrite = true
+hook = 'systemctl restart --user xsettingsd'
+
+[[item]]
+file = '~/.themes/FlatColor/colors2'
+template = 'gtk-flatcolor'
+subtemplate = 'gtk-2'
+rewrite = true

@@ -1,5 +1,5 @@
 #!/bin/bash
-list="neofetch i3 polybar picom alacritty"
+list="neofetch i3 polybar picom alacritty rofi flavours"
 #deploys dot files to where they need to go
 for i in $list; do
 	rm -r ~/.config/$i
