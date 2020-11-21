@@ -1,4 +1,7 @@
 //rofi config file
 configuration {
-	modi:["locate:~/.config/rofi/locate.sh","find:~/.config/rofi/finder.sh",window,run,ssh];
+	modi:		["locate:~/.config/rofi/locate.sh",window,run,ssh];
+	icon-theme:	"Papirus";
 }
+
+@import "/home/aest/.config/rofi/themes/center.rasi"

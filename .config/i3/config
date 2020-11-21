@@ -14,7 +14,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+grave exec konsole
+bindsym $mod+grave exec alacritty
 
 # kill focused window
 bindsym $mod+q kill
@@ -148,7 +148,7 @@ mode "resize" {
 }
 
 bindsym $win+r exec rofi -show run
-#bindsym $win+f rofi 
+bindsym $win+f exec rofi -show locate
 bindsym $mod+r mode "resize"
 bindsym $mod+i exec chromium
 
@@ -157,19 +157,44 @@ bindsym $mod+i exec chromium
 bindsym $mod+g gaps inner current set 8; gaps outer current set 8
 bindsyn $mod+Shift+g gaps inner current set 0; gaps out current set 0
 
+# Start Flavours
+## Base16 Generated
+# Author: Flavours
+#
+# You can use these variables anywhere in the i3 configuration file.
+
+set $base00 #1e2c2c
+set $base01 #404b4b
+set $base02 #636b6b
+set $base03 #858b8b
+set $base04 #a8abab
+set $base05 #cacbcb
+set $base06 #d2d3d3
+set $base07 #dadbdb
+set $base08 #b06448
+set $base09 #bf5b36
+set $base0A #597f7f
+set $base0B #697992
+set $base0C #5c7e7e
+set $base0D #767979
+set $base0E #767786
+set $base0F #7d838c
+# End Flavours
+
+
 # Set colors
-set $focused_border_color #1f7676
-set $unfocused_border_color #21252b
-set $unfocused_switch_to_color #3b414d
-set $urgent_border_color #854044
-set $indicator_color #7E8488
+#set $focused_border_color #1f7676
+#set $unfocused_border_color #21252b
+#set $unfocused_switch_to_color #3b414d
+#set $urgent_border_color #854044
+#set $indicator_color #7E8488
 
 # Window colors
-#			background		border				text			indicator
-client.focused		$inactive-bg-color	$focused_border_color		$text-color		$indicator_color
-client.unfocused	$inactive-bg-color	$unfocused_border_color		$inactive-text-color	$indicator_color
-client.focused_inactive	$inactive-bg-color	$unfocused_switch_to_color	$inactive-text-color	$indicator_color
-client.urgent		$urgent-bg-color	$urgent_border_color		$text-color		$indicator_color
+#			background	border		text		indicator
+client.focused		$base00		$base0B		$base05		$base02
+client.unfocused	$base00		$base03		$base04		$base00
+client.focused_inactive	$base00		$base03		$base04		$base00
+client.urgent		$base00		$base03		$base09		$base02
 
 default_border pixel 3
 default_floating_border pixel 3

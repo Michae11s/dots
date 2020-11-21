@@ -17,15 +17,34 @@
 ;==========================================================
 
 [colors]
+# Start flavours
+base00 = #1e2c2c
+base01 = #404b4b
+base02 = #636b6b
+base03 = #858b8b
+base04 = #a8abab
+base05 = #cacbcb
+base06 = #d2d3d3
+base07 = #dadbdb
+base08 = #b06448
+base09 = #bf5b36
+base0A = #597f7f
+base0B = #697992
+base0C = #5c7e7e
+base0D = #767979
+base0E = #767786
+base0F = #7d838c
+# End flavours
+
 ;background = ${xrdb:color0:#222}
-background = #222
-background-alt = #444
+background = ${colors.base01}
+background-alt = ${colors.base02}
 ;foreground = ${xrdb:color7:#222}
-foreground = #dfdfdf
-foreground-alt = #1f7676
-primary = #1f7676
-secondary = #2ca366
-alert = #bd2c40
+foreground = ${colors.base05}
+foreground-alt = ${colors.base0B}
+primary = ${colors.base0B}
+secondary = ${colors.base05}
+alert = ${colors.base09}
 
 [bar/top]
 ;monitor = ${env:MONITOR:HDMI-1}
