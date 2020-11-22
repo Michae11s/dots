@@ -81,7 +81,7 @@ font-2 = siji:size=14;2
 #font-3 = "Materials Icons:size11;2"
 font-3 = "Hack Nerd Font:size=12;2"
 
-modules-left = i3
+modules-left = i3 mpd
 modules-center = date
 modules-right = pulseaudio memory cpu temperature wlan eth battery
 

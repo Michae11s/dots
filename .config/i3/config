@@ -200,9 +200,10 @@ default_border pixel 3
 default_floating_border pixel 3
 
 #gaps
-gaps inner 8
-gaps outer 14
+gaps inner 6
+gaps outer 8
 gaps top 36
+
 
 # >>>>> Fonts <<<<<
 ###################

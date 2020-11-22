@@ -50,3 +50,8 @@ file = '~/.themes/FlatColor/colors2'
 template = 'gtk-flatcolor'
 subtemplate = 'gtk-2'
 rewrite = true
+
+[[item]]
+file = '~/.config/spicetify/Themes/Dribbblish/color.ini'
+template = 'spicetify'
+rewrite = false
