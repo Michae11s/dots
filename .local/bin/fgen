@@ -1,0 +1,2 @@
+#!/bin/bash
+flavours generate dark $(cat ~/.fehbg | tail -1 | cut -d "'" -f2) && flavours apply generated

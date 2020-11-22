@@ -3,6 +3,8 @@ set $alt Mod1
 set $win Mod4
 set $mod Mod1
 
+focus_follows_mouse no
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -152,6 +154,8 @@ bindsym $win+f 		exec rofi -show locate
 bindsym $mod+r 		mode "resize"
 bindsym $mod+i 		exec chromium
 bindsym $mod+Shift+i	exec chromium --incognito
+bindsym $mod+Shift+p	exec echo $PATH > /home/michae1s/tmp
+
 # >>>>>>>> look and feel <<<<<<<<<<
 ###################################
 bindsym $mod+g gaps inner current set 8; gaps outer current set 8
@@ -215,8 +219,7 @@ font pango:Terminus 11px
 # >>>>>> execs <<<<<
 ####################
 exec --no-startup-id ~/.fehbg
-exec --no-startup-id picom --config ~/.config/picom/config
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/bin/i3scripts.sh
 
 # >>>>> i3bar <<<<<
 ####################

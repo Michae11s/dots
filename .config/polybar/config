@@ -82,8 +82,8 @@ font-2 = siji:size=14;2
 font-3 = "Hack Nerd Font:size=12;2"
 
 modules-left = i3 mpd
-modules-center = date
-modules-right = pulseaudio memory cpu temperature wlan eth battery
+modules-center = time
+modules-right = pulseaudio memory cpu wlan eth date battery
 
 ;tray-position = right
 ;tray-padding = 2
@@ -281,21 +281,29 @@ format-disconnected =
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
-[module/date]
+[module/time]
 type = internal/date
 interval = 5
 
-date =
+date = "%a, %b %d"
 date-alt = " %Y-%m-%d"
 
 time = %H:%M
 time-alt = %H:%M:%S
 
-format-prefix = " "
+format-prefix = "  "
 format-prefix-foreground = ${colors.foreground-alt}
 ;format-underline = #0a6cf5
 
-label = %date% %time%
+label = %time%
+
+[module/date]
+type = internal/date
+
+date = "%a, %b %d"
+date-alt = " %Y-%m-%d"
+
+label = %date%
 
 [module/pulseaudio]
 type = internal/pulseaudio

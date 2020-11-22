@@ -2,12 +2,10 @@
 # ~/.bashrc
 #
 
+source ~/.profile
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-
-export EDITOR=nvim
-export PATH=$PATH:$(echo ~/bin)
-
 
 BLUE="\[$(tput setaf 12)\]"
 GREEN="\[$(tput setaf 6)\]"

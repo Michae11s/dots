@@ -1,0 +1,12 @@
+#!/bin/bash
+# Arch upgradeable packages
+
+list=$(checkupdates)
+
+if [ "$list" == "" ]; then
+    count=0
+else
+    count=`echo "$list" | wc -l`
+fi
+
+echo "$count"
