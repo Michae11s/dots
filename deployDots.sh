@@ -11,3 +11,18 @@ ln -s $(pwd)/.config/bash/.bashrc ~/
 ln -s $(pwd)/.config/bash/.bash_profile ~/
 ln -s $(pwd)/.config/bash/.profile ~/
 ln -s $(pwd)/.config/bash/.xsessionrc ~/
+
+#flavours config polybar
+mkdir -p ~/.local/share/flavours/base16/templates/polybar/templates/
+rm ~/.local/share/flavours/base16/templates/polybar/templates/default.mustache
+ln -s $(pwd)/.config/flavours/polybar/default.mustache ~/.local/share/flavours/base16/templates/polybar/templates/
+
+#flavouts config dunst
+mkdir -p ~/.local/share/flavours/base16/templates/dunst/templates/
+rm ~/.local/share/flavours/base16/templates/dunst/templates/custom.mustache
+ln -s $(pwd)/.config/flavours/dunst/custom.mustache ~/.local/share/flavours/base16/templates/dunst/templates/
+
+mkdir -p ~/.local/share/flavours/base16/templates/spicetify/templates/
+rm ~/.local/share/flavours/base16/templates/spicetify/templates/default.mustache
+ln -s $(pwd)/.config/flavours/spicetify/default.mustache ~/.local/share/flavours/base16/templates/spicetify/templates/default.mustache
+
