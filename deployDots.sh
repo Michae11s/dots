@@ -22,7 +22,12 @@ mkdir -p ~/.local/share/flavours/base16/templates/dunst/templates/
 rm ~/.local/share/flavours/base16/templates/dunst/templates/custom.mustache
 ln -s $(pwd)/.config/flavours/dunst/custom.mustache ~/.local/share/flavours/base16/templates/dunst/templates/
 
+#flavours config spicetify
 mkdir -p ~/.local/share/flavours/base16/templates/spicetify/templates/
 rm ~/.local/share/flavours/base16/templates/spicetify/templates/default.mustache
 ln -s $(pwd)/.config/flavours/spicetify/default.mustache ~/.local/share/flavours/base16/templates/spicetify/templates/default.mustache
 
+#flavours config rofi
+mkdir -p ~/.local/share/flavours/base16/templates/rofi/templates/
+rm ~/.local/share/flavours/base16/templates/rofi/templates/Kustomcolors.mustache
+ln -s $(pwd)/.config/flavours/rofi/Kustomcolors.mustache ~/.local/share/flavours/base16/templates/rofi/templates/Kustomcolors.mustache
