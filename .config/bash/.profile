@@ -1,5 +1,5 @@
 ## Profile
 export EDITOR=nvim
 #export PATH=$PATH:$HOME/bin
-PATH=$PATH:/home/michae1s/bin
+PATH=$PATH:~/.local/bin
 export PATH

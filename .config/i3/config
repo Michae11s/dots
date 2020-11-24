@@ -3,7 +3,7 @@ set $alt Mod1
 set $win Mod4
 set $mod Mod1
 
-focus_follows_mouse no
+# focus_follows_mouse no
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -167,22 +167,22 @@ bindsyn $mod+Shift+g gaps inner current set 0; gaps out current set 0
 #
 # You can use these variables anywhere in the i3 configuration file.
 
-set $base00 #1e2c2c
-set $base01 #404b4b
-set $base02 #636b6b
-set $base03 #858b8b
-set $base04 #a8abab
-set $base05 #cacbcb
-set $base06 #d2d3d3
-set $base07 #dadbdb
-set $base08 #b06448
-set $base09 #bf5b36
-set $base0A #597f7f
-set $base0B #697992
-set $base0C #5c7e7e
-set $base0D #767979
-set $base0E #767786
-set $base0F #7d838c
+set $base00 #4b2824
+set $base01 #6b4e49
+set $base02 #8a746f
+set $base03 #a99a95
+set $base04 #c9c0ba
+set $base05 #e8e6e0
+set $base06 #ece9e4
+set $base07 #efede9
+set $base08 #d04e07
+set $base09 #ae979d
+set $base0A #a96755
+set $base0B #946e7c
+set $base0C #f6eccf
+set $base0D #bc5d36
+set $base0E #9d6d5d
+set $base0F #8f7174
 # End Flavours
 
 

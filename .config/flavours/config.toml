@@ -12,7 +12,8 @@
 file = '~/.config/polybar/config'
 template = 'polybar'
 rewrite = false
-hook = '~/.config/polybar/launch.sh'
+#hook = '/home/aest/.local/bin/i3scripts.sh'
+#hook = 'i3scripts.sh'
 
 [[item]]
 file = '~/.Xresources'
@@ -54,4 +55,12 @@ rewrite = true
 [[item]]
 file = '~/.config/spicetify/Themes/Dribbblish/color.ini'
 template = 'spicetify'
+hook = 'spicetify apply'
 rewrite = false
+
+[[item]]
+file = '~/.config/dunst/dunstrc'
+template = 'dunst'
+subtemplate = 'custom'
+rewrite = false
+hook = "i3scripts.sh"
