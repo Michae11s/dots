@@ -55,7 +55,7 @@ rewrite = true
 [[item]]
 file = '~/.config/spicetify/Themes/Dribbblish/color.ini'
 template = 'spicetify'
-hook = 'spicetify apply'
+hook = 'spicetify update'
 rewrite = false
 
 [[item]]

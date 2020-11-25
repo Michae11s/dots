@@ -1,0 +1,7 @@
+[Unit]
+Description=Randomly selects a wallpaper
+
+[Service]
+Type=simple
+ExecStart=%h/bin/paperChanger
+Restart=no

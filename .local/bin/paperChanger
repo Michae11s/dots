@@ -1,0 +1,6 @@
+#!/bin/bash
+# Script to choose a random wallpaper from the wallpaper directory
+
+WALLDIR=~/Wallpaper/.extras/photos/
+
+feh --bg-fill --randomize $WALLDIR*

@@ -253,28 +253,28 @@
     # * close_all: Close all notifications.
     # These values can be strung together for each mouse event, and
     # will be executed in sequence.
-    mouse_left_click = close_current
-    mouse_middle_click = do_action, close_current
-    mouse_right_click = close_all
+    mouse_left_click = do_action, close_current
+    mouse_middle_click = close_all
+    mouse_right_click = close_current
 
 # Start Flavours
-    frame_color = "#946e7c"
-    separator_color = "#e8e6e0"
+    frame_color = "#eedebf"
+    separator_color = "#e7e6de"
 
 [urgency_low]
-    background = "#6b4e49"
-    foreground = "#a99a95"
+    background = "#4c5562"
+    foreground = "#9a9da0"
     timeout = 10
 
 [urgency_normal]
-    background = "#8a746f"
-    foreground = "#e8e6e0"
+    background = "#737981"
+    foreground = "#e7e6de"
     timeout = 10
 
 [urgency_critical]
-    background = "#d04e07"
-    foreground = "#ece9e4"
-    frame_color = "#a96755"
+    background = "#fafaf4"
+    foreground = "#ebe9e3"
+    frame_color = "#e2d3bf"
     timeout = 10
 # End Flavours
 

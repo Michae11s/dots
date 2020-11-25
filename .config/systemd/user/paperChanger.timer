@@ -1,0 +1,9 @@
+[Unit]
+Description=Run Paperchanger every 2 min
+
+[Timer]
+OnBootSec=60sec
+OnUnitActiveSec=2min
+
+[Install]
+WantedBy=timers.target

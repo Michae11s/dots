@@ -1,13 +1,14 @@
 #!/bin/bash
 #script for rofi to find files using the locate command since its so much faster
 
+mkdir -p ~/.cache/rofi/
+
 if [ "$@" ]
 then
 	QUERY=$@
-	mkdir -p ~/.cache/rofi
-	plocate ~ | grep -v .local | grep -v .share | grep -v .themes | grep -v cache > ~/.cache/rofi/locatecache &
 	if [ $(plocate -c $QUERY) == 1 ]; then
 		coproc ( xdg-open $QUERY )
+		plocate ~ | grep -v .local | grep -v .share | grep -v .themes | grep -v cache > ~/.cache/rofi/locatecache &
 		exit 0
 	else 
 		plocate $QUERY
