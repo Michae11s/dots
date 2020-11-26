@@ -18,22 +18,22 @@
 
 [colors]
 # Start flavours
-base00 = #173433
-base01 = #3a5451
-base02 = #5d756f
-base03 = #81958d
-base04 = #a4b6ab
-base05 = #c8d7c9
-base06 = #d0ddd1
-base07 = #d8e3d9
-base08 = #6e76a0
-base09 = #497cac
-base0A = #568170
-base0B = #857474
-base0C = #ca5414
-base0D = #498373
-base0E = #247fb2
-base0F = #6c7e5f
+base00 = #25332d
+base01 = #455248
+base02 = #657164
+base03 = #85907f
+base04 = #a5af9a
+base05 = #c5cfb6
+base06 = #ced6c1
+base07 = #d6ddcc
+base08 = #7f7489
+base09 = #9cacac
+base0A = #748383
+base0B = #52817a
+base0C = #9bb39c
+base0D = #637e75
+base0E = #728c7e
+base0F = #637e74
 # End flavours
 
 ;background = ${xrdb:color0:#222}
