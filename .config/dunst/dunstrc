@@ -258,23 +258,23 @@
     mouse_right_click = close_current
 
 # Start Flavours
-    frame_color = "#eedebf"
-    separator_color = "#e7e6de"
+    frame_color = "#857474"
+    separator_color = "#c8d7c9"
 
 [urgency_low]
-    background = "#4c5562"
-    foreground = "#9a9da0"
+    background = "#3a5451"
+    foreground = "#81958d"
     timeout = 10
 
 [urgency_normal]
-    background = "#737981"
-    foreground = "#e7e6de"
+    background = "#5d756f"
+    foreground = "#c8d7c9"
     timeout = 10
 
 [urgency_critical]
-    background = "#fafaf4"
-    foreground = "#ebe9e3"
-    frame_color = "#e2d3bf"
+    background = "#6e76a0"
+    foreground = "#d0ddd1"
+    frame_color = "#568170"
     timeout = 10
 # End Flavours
 
