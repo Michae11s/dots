@@ -1,0 +1,2 @@
+#!/bin/bash
+gwenview $(cat ~/.fehbg | sed -n '2 p' | awk '{ print $4 }' | cut -d "'" -f2)

@@ -1,0 +1,5 @@
+for d in *.zip
+do
+  dir=~/Wallpaper/.extras/metart/${d%%.zip}
+  unzip -d "$dir" "$d"
+done
