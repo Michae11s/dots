@@ -140,7 +140,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 8.0
+  size: 10.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -172,35 +172,35 @@ font:
 colors:
   # Default colors
   primary:
-    background: '0x25332d'
-    foreground: '0xc5cfb6'
+    background: '0x3e2c28'
+    foreground: '0xd6cac5'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x25332d'
-    cursor: '0xc5cfb6'
+    text: '0x3e2c28'
+    cursor: '0xd6cac5'
 
   # Normal colors
   normal:
-    black:   '0x25332d'
-    red:     '0x7f7489'
-    green:   '0x52817a'
-    yellow:  '0x748383'
-    blue:    '0x637e75'
-    magenta: '0x728c7e'
-    cyan:    '0x9bb39c'
-    white:   '0xc5cfb6'
+    black:   '0x3e2c28'
+    red:     '0x5e7f74'
+    green:   '0xb65d6b'
+    yellow:  '0xd49b7b'
+    blue:    '0xb08d9d'
+    magenta: '0xea4b47'
+    cyan:    '0xd3464f'
+    white:   '0xd6cac5'
 
   # Bright colors
   bright:
-    black:   '0x85907f'
-    red:     '0x9cacac'
-    green:   '0x455248'
-    yellow:  '0x657164'
-    blue:    '0xa5af9a'
-    magenta: '0xced6c1'
-    cyan:    '0x637e74'
-    white:   '0xd6ddcc'
+    black:   '0x998b86'
+    red:     '0xef131f'
+    green:   '0x5c4b47'
+    yellow:  '0x7b6b66'
+    blue:    '0xb7aba5'
+    magenta: '0xdcd2cd'
+    cyan:    '0xbb5c4c'
+    white:   '0xe2dad6'
 
 draw_bold_text_with_bright_colors: false
 # End Flavours

@@ -39,12 +39,12 @@ template = 'rofi'
 subtemplate = 'Kustomcolors'
 rewrite = true
 
-#[[item]]
-#file = '~/.themes/FlatColor/colors3'
-#template = 'gtk-flatcolor'
-#subtemplate = 'gtk-3'
-#rewrite = true
-#hook = 'systemctl restart --user xsettingsd'
+[[item]]
+file = '~/.local/share/themes/FlatColor/colors3'
+template = 'gtk-flatcolor'
+subtemplate = 'gtk-3'
+rewrite = true
+hook = 'systemctl restart --user xsettingsd'
 
 #[[item]]
 #file = '~/.themes/FlatColor/colors2'

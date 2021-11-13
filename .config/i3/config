@@ -152,9 +152,11 @@ mode "resize" {
 bindsym $win+r 		exec rofi -show run
 bindsym $win+f 		exec rofi -show locate
 bindsym $mod+r 		mode "resize"
-bindsym $mod+i 		exec chromium
-bindsym $mod+Shift+i	exec chromium --incognito
-bindsym $mod+Shift+p	exec echo $PATH > /home/michae1s/tmp
+bindsym $mod+i 		exec chromium --enable-features=WebUIDarkMode --force-dark-mode
+bindsyn $mod+l		exec loginctl lock-session
+bindsym $mod+Shift+i	exec chromium --enable-features=WebUIDarkMode --force-dark-mode --incognito
+bindsym $mod+Shift+p	exec paperDisplay
+bindsym $mod+p		exec paperChanger
 
 # >>>>>>>> look and feel <<<<<<<<<<
 ###################################
@@ -167,22 +169,22 @@ bindsyn $mod+Shift+g gaps inner current set 0; gaps out current set 0
 #
 # You can use these variables anywhere in the i3 configuration file.
 
-set $base00 #25332d
-set $base01 #455248
-set $base02 #657164
-set $base03 #85907f
-set $base04 #a5af9a
-set $base05 #c5cfb6
-set $base06 #ced6c1
-set $base07 #d6ddcc
-set $base08 #7f7489
-set $base09 #9cacac
-set $base0A #748383
-set $base0B #52817a
-set $base0C #9bb39c
-set $base0D #637e75
-set $base0E #728c7e
-set $base0F #637e74
+set $base00 #3e2c28
+set $base01 #5c4b47
+set $base02 #7b6b66
+set $base03 #998b86
+set $base04 #b7aba5
+set $base05 #d6cac5
+set $base06 #dcd2cd
+set $base07 #e2dad6
+set $base08 #5e7f74
+set $base09 #ef131f
+set $base0A #d49b7b
+set $base0B #b65d6b
+set $base0C #d3464f
+set $base0D #b08d9d
+set $base0E #ea4b47
+set $base0F #bb5c4c
 # End Flavours
 
 

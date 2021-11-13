@@ -17,6 +17,8 @@ alias ls='ls --color=auto'
 alias ll='ls -lah'
 alias la='ls -a'
 alias vim=nvim
+alias clear='clear && source ~/.bashrc'
+alias fg='feh --bg-max --randomize --recursive'
 
 eval "$(thefuck --alias)"
 echo ""
