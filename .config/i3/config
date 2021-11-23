@@ -152,9 +152,9 @@ mode "resize" {
 bindsym $win+r 		exec rofi -show run
 bindsym $win+f 		exec rofi -show locate
 bindsym $mod+r 		mode "resize"
-bindsym $mod+i 		exec chromium --enable-features=WebUIDarkMode --force-dark-mode
+bindsym $mod+i 		exec google-chrome-stable --enable-features=WebUIDarkMode --force-dark-mode
 bindsyn $mod+l		exec loginctl lock-session
-bindsym $mod+Shift+i	exec chromium --enable-features=WebUIDarkMode --force-dark-mode --incognito
+bindsym $mod+Shift+i	exec google-chrome-stable --enable-features=WebUIDarkMode --force-dark-mode --incognito
 bindsym $mod+Shift+p	exec paperDisplay
 bindsym $mod+p		exec paperChanger
 
