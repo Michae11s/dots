@@ -1,0 +1,7 @@
+#!/bin/bash
+WD=$(pwd)
+cd /etc/pacman.d/
+curl "https://archlinux.org/mirrorlist/?country=CA&country=US&protocol=http&protocol=https&ip_version=4&use_mirror_status=on" -o "mirrorlist.new"
+sed -i 's/^#Server/Server/' 'mirrorlist.new'
+rankmirrors -n 10 mirrorlist.new > mirrorlist
+cd $WD
