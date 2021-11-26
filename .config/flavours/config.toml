@@ -40,6 +40,11 @@ subtemplate = 'Kustomcolors'
 rewrite = true
 
 [[item]]
+file = '~/.config/i3lock/options.sh'
+template = 'i3lock'
+rewrite = false
+
+[[item]]
 file = '~/.local/share/themes/FlatColor/colors3'
 template = 'gtk-flatcolor'
 subtemplate = 'gtk-3'

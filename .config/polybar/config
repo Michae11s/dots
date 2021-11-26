@@ -18,22 +18,22 @@
 
 [colors]
 # Start flavours
-base00 = #3e2c28
-base01 = #5c4b47
-base02 = #7b6b66
-base03 = #998b86
-base04 = #b7aba5
-base05 = #d6cac5
-base06 = #dcd2cd
-base07 = #e2dad6
-base08 = #5e7f74
-base09 = #ef131f
-base0A = #d49b7b
-base0B = #b65d6b
-base0C = #d3464f
-base0D = #b08d9d
-base0E = #ea4b47
-base0F = #bb5c4c
+base00 = #192637
+base01 = #384655
+base02 = #576573
+base03 = #778590
+base04 = #96a5ae
+base05 = #b5c5cc
+base06 = #c0ced3
+base07 = #cbd6db
+base08 = #976e6e
+base09 = #4c8181
+base0A = #7171bb
+base0B = #3680a2
+base0C = #5872d2
+base0D = #2a80a8
+base0E = #397bbe
+base0F = #2b7dbf
 # End flavours
 
 ;background = ${xrdb:color0:#222}
@@ -79,7 +79,7 @@ font-0 = fixed:pixelsize=11;1
 font-1 = unifont:fontformat=truetype:size=11:antialias=false;0
 font-2 = siji:size=14;2
 #font-3 = "Materials Icons:size11;2"
-font-3 = "Hack Nerd Font:size=12;2"
+font-3 = "Hack Nerd Font:size=14;2"
 
 modules-left = i3 mpd
 modules-center = time
@@ -246,7 +246,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp58s0
+interface = wlan0
 interval = 3.0
 format-connected = <ramp-signal>
 ;format-connected-underline = #9f78e1
@@ -267,7 +267,7 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface = ens32
+interface = eth0
 interval = 3.0
 
 ;format-connected-underline = #55aa55

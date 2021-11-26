@@ -151,9 +151,10 @@ mode "resize" {
 
 bindsym $win+r 		exec rofi -show run
 bindsym $win+f 		exec rofi -show locate
+bindsym $win+e		exec dolphin
 bindsym $mod+r 		mode "resize"
 bindsym $mod+i 		exec google-chrome-stable --enable-features=WebUIDarkMode --force-dark-mode
-bindsyn $mod+l		exec loginctl lock-session
+bindsyn $mod+l		exec i3locker.sh
 bindsym $mod+Shift+i	exec google-chrome-stable --enable-features=WebUIDarkMode --force-dark-mode --incognito
 bindsym $mod+Shift+p	exec paperDisplay
 bindsym $mod+p		exec paperChanger
@@ -169,22 +170,22 @@ bindsyn $mod+Shift+g gaps inner current set 0; gaps out current set 0
 #
 # You can use these variables anywhere in the i3 configuration file.
 
-set $base00 #3e2c28
-set $base01 #5c4b47
-set $base02 #7b6b66
-set $base03 #998b86
-set $base04 #b7aba5
-set $base05 #d6cac5
-set $base06 #dcd2cd
-set $base07 #e2dad6
-set $base08 #5e7f74
-set $base09 #ef131f
-set $base0A #d49b7b
-set $base0B #b65d6b
-set $base0C #d3464f
-set $base0D #b08d9d
-set $base0E #ea4b47
-set $base0F #bb5c4c
+set $base00 #192637
+set $base01 #384655
+set $base02 #576573
+set $base03 #778590
+set $base04 #96a5ae
+set $base05 #b5c5cc
+set $base06 #c0ced3
+set $base07 #cbd6db
+set $base08 #976e6e
+set $base09 #4c8181
+set $base0A #7171bb
+set $base0B #3680a2
+set $base0C #5872d2
+set $base0D #2a80a8
+set $base0E #397bbe
+set $base0F #2b7dbf
 # End Flavours
 
 

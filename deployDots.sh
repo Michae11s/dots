@@ -1,5 +1,5 @@
 #!/bin/bash
-list="neofetch i3 polybar picom alacritty rofi flavours dunst UMS"
+list="neofetch i3 polybar picom alacritty rofi flavours dunst UMS i3lock"
 #deploys dot files to where they need to go
 for i in $list; do
 	rm -r ~/.config/$i
@@ -31,3 +31,8 @@ ln -s $(pwd)/.config/flavours/spicetify/default.mustache ~/.local/share/flavours
 mkdir -p ~/.local/share/flavours/base16/templates/rofi/templates/
 rm ~/.local/share/flavours/base16/templates/rofi/templates/Kustomcolors.mustache
 ln -s $(pwd)/.config/flavours/rofi/Kustomcolors.mustache ~/.local/share/flavours/base16/templates/rofi/templates/Kustomcolors.mustache
+
+#flavours config i3lock
+mkdir -p ~/.local/share/flavours/base16/templates/i3lock/templates/
+rm ~/.local/share/flavours/base16/templates/i3lock/templates/default.mustache
+ln -s $(pwd)/.config/flavours/i3lock/default.mustache ~/.local/share/flavours/base16/templates/i3lock/templates/default.mustache
