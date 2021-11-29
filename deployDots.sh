@@ -6,6 +6,12 @@ for i in $list; do
 	ln -s $(pwd)/.config/$i ~/.config/$i
 done
 
+#systemd
+if [[ ! -f ~/.config/systemd ]]; then
+	rm -r ~/.config/systemd
+	ln -sf $(pwd)/.config/systemd ~/.config/systemd
+fi
+
 rm ~/.bashrc ~/.bash_profile ~/.profile ~/.xsessionrc
 ln -s $(pwd)/.config/bash/.bashrc ~/
 ln -s $(pwd)/.config/bash/.bash_profile ~/

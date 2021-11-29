@@ -172,35 +172,35 @@ font:
 colors:
   # Default colors
   primary:
-    background: '0x192637'
-    foreground: '0xb5c5cc'
+    background: '0x1b2929'
+    foreground: '0xcacbcb'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x192637'
-    cursor: '0xb5c5cc'
+    text: '0x1b2929'
+    cursor: '0xcacbcb'
 
   # Normal colors
   normal:
-    black:   '0x192637'
-    red:     '0x976e6e'
-    green:   '0x3680a2'
-    yellow:  '0x7171bb'
-    blue:    '0x2a80a8'
-    magenta: '0x397bbe'
-    cyan:    '0x5872d2'
-    white:   '0xb5c5cc'
+    black:   '0x1b2929'
+    red:     '0xb16446'
+    green:   '0x697992'
+    yellow:  '0x597f7f'
+    blue:    '0x767979'
+    magenta: '0x767786'
+    cyan:    '0x5c7e7e'
+    white:   '0xcacbcb'
 
   # Bright colors
   bright:
-    black:   '0x778590'
-    red:     '0x4c8181'
-    green:   '0x384655'
-    yellow:  '0x576573'
-    blue:    '0x96a5ae'
-    magenta: '0xc0ced3'
-    cyan:    '0x2b7dbf'
-    white:   '0xcbd6db'
+    black:   '0x848a8a'
+    red:     '0xbf5b35'
+    green:   '0x3e4949'
+    yellow:  '0x616a6a'
+    blue:    '0xa7abab'
+    magenta: '0xd2d3d3'
+    cyan:    '0x7d838c'
+    white:   '0xdadbdb'
 
 draw_bold_text_with_bright_colors: false
 # End Flavours

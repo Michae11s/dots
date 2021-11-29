@@ -170,22 +170,22 @@ bindsym $mod+Shift+g gaps inner current set 0; gaps out current set 0
 #
 # You can use these variables anywhere in the i3 configuration file.
 
-set $base00 #192637
-set $base01 #384655
-set $base02 #576573
-set $base03 #778590
-set $base04 #96a5ae
-set $base05 #b5c5cc
-set $base06 #c0ced3
-set $base07 #cbd6db
-set $base08 #976e6e
-set $base09 #4c8181
-set $base0A #7171bb
-set $base0B #3680a2
-set $base0C #5872d2
-set $base0D #2a80a8
-set $base0E #397bbe
-set $base0F #2b7dbf
+set $base00 #1b2929
+set $base01 #3e4949
+set $base02 #616a6a
+set $base03 #848a8a
+set $base04 #a7abab
+set $base05 #cacbcb
+set $base06 #d2d3d3
+set $base07 #dadbdb
+set $base08 #b16446
+set $base09 #bf5b35
+set $base0A #597f7f
+set $base0B #697992
+set $base0C #5c7e7e
+set $base0D #767979
+set $base0E #767786
+set $base0F #7d838c
 # End Flavours
 
 

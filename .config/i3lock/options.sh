@@ -1,16 +1,27 @@
 # Start flavours
-main_fg=b5c5cc
-secondary_fg=3680a2
-main_bg=384655
-borders=192637
-sec_bg=576573
-error=976e6e
-select=96a5ae
-fail_main=5872d2
-fail_sec=2a80a8
+main_fg=cacbcb
+secondary_fg=697992
+main_bg=3e4949
+borders=1b2929
+sec_bg=616a6a
+error=b16446
+select=a7abab
+fail_main=5c7e7e
+fail_sec=767979
 # End flavours
 
 alias echo="echo -n"
+
+#brief options
+echo " -k"
+echo " --indicator"
+
+#ring options
+echo " --ring-width 14.0"
+echo " --radius 180"
+
+#blur
+echo " -B 9"
 
 #color and transparency
 echo " -c "$main_bg"80"
