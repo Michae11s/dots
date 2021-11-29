@@ -11,6 +11,8 @@ if [[ ! -f ~/.config/systemd ]]; then
 	rm -r ~/.config/systemd
 	ln -sf $(pwd)/.config/systemd ~/.config/systemd
 fi
+systemctl --user enable --now paperChanger.timer
+
 
 rm ~/.bashrc ~/.bash_profile ~/.profile ~/.xsessionrc
 ln -s $(pwd)/.config/bash/.bashrc ~/
