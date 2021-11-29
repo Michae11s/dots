@@ -5,4 +5,4 @@
 .config/spicetify/Extensions/
 .config/spicetify/Extracted/
 .config/spicetify/Themes
-.config/systemd/users/timers.target.wants
+.config/systemd/user/timers.target.wants/
