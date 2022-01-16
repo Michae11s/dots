@@ -1,5 +1,5 @@
 #!/bin/bash
-list="neofetch i3 polybar picom alacritty rofi flavours dunst UMS i3lock fontconfig"
+list="neofetch i3 polybar picom alacritty rofi flavours dunst UMS i3lock fontconfig qt5ct"
 #deploys dot files to where they need to go
 for i in $list; do
 	rm -r ~/.config/$i
