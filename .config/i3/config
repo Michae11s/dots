@@ -223,6 +223,7 @@ font pango:Terminus 11px
 ####################
 exec --no-startup-id ~/.fehbg
 exec_always --no-startup-id $HOME/bin/i3scripts.sh
+exec --no-startup-id /usr/bin/lxqt-policykit-agent &
 
 # >>>>> i3bar <<<<<
 ####################
