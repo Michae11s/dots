@@ -1,4 +1,6 @@
 ## Profile
+export XDG_CONFIG_HOME=$HOME/.config
+export JUPYTER_CONFIG_DIR=$HOME/.config/jupyter
 export EDITOR=nvim
 #export PATH=$PATH:$HOME/bin
 PATH=$PATH:/home/$USER/.local/bin
