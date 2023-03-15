@@ -11,7 +11,7 @@ BLUE="\[$(tput setaf 12)\]"
 GREEN="\[$(tput setaf 6)\]"
 RESET="\[$(tput sgr0)\]"
 
-export PS1="${GREEN} \w${RESET} \\$ "
+export PS1="\h${GREEN} \w${RESET} \\$ "
 
 alias ls='ls --color=auto'
 alias ll='ls -lah'
